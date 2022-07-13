@@ -1,6 +1,9 @@
 <?php
 get_header();
 ?>
+<div class="titles">
+    <span>Semua Berita</span>
+</div>
 <div class="list-news">
 <?php
 if ( have_posts() ) : while ( have_posts() ) : the_post();

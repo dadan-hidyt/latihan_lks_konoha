@@ -432,6 +432,8 @@ header nav#menu ul > li > a:focus::after{
 
 .singgle .entry-content img{
     width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 .toggle-nav{
     display: none;
@@ -466,7 +468,7 @@ header nav#menu ul > li > a:focus::after{
     display: block;
     color: white;
     font-weight: bold;
-    width: 120px;
+    width: 160px;
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
@@ -477,6 +479,9 @@ header nav#menu ul > li > a:focus::after{
     margin-bottom: 10px;
     text-transform: uppercase;
     font-size: 24px;
+}
+main{
+    z-index: -999999;
 }
 .list-news article .entry-title a{
     text-decoration: none;
@@ -489,16 +494,40 @@ header nav#menu ul > li > a:focus::after{
     margin-bottom: 6px;
     object-fit: cover;
 }
+.titles{
+    text-align: center;
+    z-index: -999999;
+}
 .toggle-nav .toggles-item{
-    width: 40px;
+    width: 30px;
     margin: 4px 0px;
     height: 3px;
     display: block;
-    background-color: red;
+    background-color: rgb(56, 56, 56);
+}
+.titles{
+    width: 200px;
+    position: relative;
+    margin: 10px 0px;
+}
+.titles::after{
+    content: '';
+    width: 100%;
+    height:10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -9999;
+    left: 0;
+    background-color: rgb(255, 230, 0);
+}
+.titles span{
+    font-size: 30px;
 }
 footer#footer{
     height: 100px;
     text-align: center;
+    padding: 10px 0px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -506,9 +535,26 @@ footer#footer{
     background-color: white;
     box-shadow: 0px 0px 7px #dedede;
 }
+footer#footer #medsos{
+    margin-top: 10px;
+}
+footer#footer #medsos a{
+    text-decoration: none;
+    font-weight: bold;
+    color:#666464;
+}
 @media only screen and (max-width: 768px) {
+    .list-news{
+        display: block;
+    }
+    .list-news article{
+        width: 100%;
+    }
     .toggle-nav{
         display: block;
+    }
+    .singgle{
+        width: 98%;
     }
     header nav#menu{
         background-color: rgb(231, 231, 231);
