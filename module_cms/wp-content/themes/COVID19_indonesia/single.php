@@ -1,5 +1,5 @@
 <?php get_header();
-the_breadcrumb();
+// the_breadcrumb();
 ?>
 <div class="singgle">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

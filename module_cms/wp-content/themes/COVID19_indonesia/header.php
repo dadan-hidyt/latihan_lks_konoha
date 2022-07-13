@@ -28,6 +28,12 @@
                                                 echo ' itemprop="description"';
                                             } ?>><?php bloginfo('description'); ?></div>
             </div>
+            <div class="toggle-nav">
+                <span class="toggles-item"></span>
+                <span class="toggles-item"></span>
+                <span class="toggles-item"></span>
+
+            </div>
             <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
                 <?php wp_nav_menu(array('theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>')); ?>
                 <div id="search"><?php get_search_form(); ?></div>

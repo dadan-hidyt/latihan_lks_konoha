@@ -432,12 +432,65 @@ header nav#menu ul > li > a:focus::after{
 .singgle .entry-content img{
     width: 100%;
 }
+.toggle-nav{
+    display: none;
+}
 .entry-meta{
     margin-bottom: 10px;
 }
-
+img{
+    width: 100%;
+}
 .entry-meta a{
     color:#3a3a3a;
     font-weight: bold;
     text-decoration: none;
 }
+.toggle-nav .toggles-item{
+    width: 40px;
+    margin: 4px 0px;
+    height: 3px;
+    display: block;
+    background-color: red;
+}
+@media only screen and (max-width: 768px) {
+    .toggle-nav{
+        display: block;
+    }
+    header nav#menu{
+        background-color: rgb(231, 231, 231);
+        display: none;
+        position: fixed;
+        top: 70px;
+        box-shadow: 0px 0px 1px 2px #dedede;
+        height: 100%;
+        width: 70%;
+        left: 0;
+    }
+    
+    textarea{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    header nav#menu.show{
+        display: block;
+    }
+    #container{
+        width: 98%;
+    }
+    header#header .flex{
+        width: 95%;
+    }
+    header nav#menu ul{
+       display: block;
+    }
+    header nav#menu ul > li > a{
+        display: block;
+    }
+    #branding #site-title a{
+        font-size: 18px;
+    }
+    #site-description{
+        display: none;
+    }
+  }
