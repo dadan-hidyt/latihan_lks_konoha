@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+}
+*{
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.form-control{
+    width: 100%;
+    margin: auto;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #dedede;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.form-login{
+    text-transform: capitalize;
+    box-shadow: 0px 0px 8px #dedede;
+    width: 430px;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin:80px auto;
+}
+.fg label{
+    margin-bottom: 4px;
+}
+.fg{
+    margin:16px 0px;
+}
+.btn{
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(0, 102, 255);
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.router-link-active{
+    color: aqua;
+}
+.toggle-nav{
+    display: none;
+}
+@media only screen and (max-width:430px) {
+    .container{
+        width: 90%;
+    }
+    .toggle-nav{
+        display: block;
+    }
+    .form-login{
+        width: 100%;
+        margin: 19px auto;
+    }
+}
